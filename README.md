@@ -12,4 +12,3 @@ To eliminate the race condition, a lock (`Lock`) was implemented that synchronis
 - **Lock Usage**: Access to `global_var` is protected with `with lock` in the `run()` method of the `IncrementThread` class. This ensures that only one thread modifies the variable at a time, thus avoiding the race condition.
 - Correct Result**: With this modification, `global_var` will have the expected value of 50 after 50 increments, ensuring accurate results.
 
-Translated with DeepL.com (free version)
